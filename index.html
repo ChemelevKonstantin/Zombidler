@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombie Apocalypse Scene</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="controls">
+        <!-- Game speed slider removed -->
+    </div>
+    <div class="stats-display">
+        <div class="player-stats">
+            <h3>Player Stats📶</h3>
+            <div>⏫LV: <span id="playerLevel">1</span></div>
+            <div>XP: <span id="playerXP">0</span>/<span id="nextLevelXP">100</span></div>
+            <div>👊DMG: <span id="playerDamage">10</span></div>
+            <div>💥Fire Rate: <span id="playerFireRate">1</span>/s</div>
+            <div>🎯Accuracy: <span id="playerAccuracy">50</span>%</div>
+            <div>💵Money: <span id="playerMoney">0</span>💲</div>
+            <div>⭐SP: <span id="skillPoints">0</span></div>
+        </div>
+        <div class="game-stats">
+            <h3>Game Statsℹ️</h3>
+            <div>Wave: <span id="currentWave">1</span></div>
+            <div>Zombies Killed: <span id="zombiesKilled">0</span></div>
+            <div>Game Time: <span id="gameTime">0</span>s</div>
+        </div>
+    </div>
+
+    <div class="upgrades-window">
+        <h3>Upgrades💪</h3>
+        <div class="upgrade-buttons">
+            <button id="upgradeDamage">Damage +5 (1⭐)</button>
+            <button id="upgradeFireRate">Fire Rate +0.2/s (1⭐)</button>
+            <button id="upgradeAccuracy">Accuracy +5% (1⭐)</button>
+        </div>
+    </div>
+
+    <div class="shop-window">
+        <h3>Shop🛒</h3>
+        <div class="shop-buttons">
+            <button id="buyBow">Buy Shotgun (10💵)</button>
+            <button id="buyUzi">Buy Uzi (50💵)</button>
+            <button id="buyAR">Buy MG (100💵)</button>
+            <button id="buyFortify">Fortify 🛠️ +10 HP (10💵)</button>
+        </div>
+    </div>
+
+    <div class="game-container">
+        <div class="scene">
+            <div class="sky">
+                <div class="sun">☀️</div>
+                <div class="cloud">☁️</div>
+                <div class="cloud">☁️</div>
+                <div class="cloud">☁️</div>
+            </div>
+            <div class="ground"></div>
+            <div class="buildings">
+                <div class="building">🏢</div>
+                <div class="building">🏢</div>
+                <div class="building">🏪</div>
+                <div class="building">🏢</div>
+                <div class="building">🏦</div>
+            </div>
+            <div class="trees">
+                <div class="tree">🌳</div>
+                <div class="tree">🌲</div>
+                <div class="tree">🌳</div>
+                <div class="tree">🌲</div>
+                <div class="tree">🌳</div>
+                <div class="tree">🌲</div>
+            </div>
+            <div class="road"></div>
+            <div class="cars">
+                <div class="car car1">🚗</div>
+                <div class="car car2">🚘</div>
+                <div class="car car3">🚙</div>
+                <div class="car car4">🚛</div>
+                <div class="car car6">🚕</div>
+            </div>
+            <div class="car car5">🚌</div>
+            <div class="bus-stop">🚏</div>
+            <div class="survivor">
+                <div class="survivor-emoji"></div>
+                <div class="gun"><img src="images/gun1.png" alt="Gun" style="width:40px;height:40px;display:block;filter:drop-shadow(2px 4px 6px rgba(0,0,0,0.5));"></div>
+            </div>
+            <div class="barricade top-barricade">🚧</div>
+            <div class="barricade">🚧</div>
+            <div class="barricade bottom-barricade">🚧</div>
+            <div class="zombie">🧟</div>
+            <div class="bullet">💥</div>
+            <div class="shot-effects"></div>
+            <div class="blood-effects"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
